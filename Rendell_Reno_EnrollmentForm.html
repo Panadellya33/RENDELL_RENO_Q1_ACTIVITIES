@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Education Enrollment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    td, th {
+      border: 1px solid #000;
+      padding: 5px;
+      vertical-align: top;
+    }
+    .section-title {
+      background-color: #f0f0f0;
+      font-weight: bold;
+      text-align: left;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .checkbox-group label {
+      margin-right: 15px;
+    }
+    .no-border {
+      border: none;
+    }
+    .input-box {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">BASIC EDUCATION ENROLLMENT FORM</h2>
+  <p style="text-align:center;">THIS FORM IS NOT FOR SALE</p>
+  <table>
+    <tr>
+      <td>School Year: <input class="input-box" type="text" name="school_year"></td>
+      <td>Grade Level to Enroll: <input class="input-box" type="text" name="grade_level"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <label><input type="checkbox" name="lrn_yes"> With LRN?</label>
+        <label><input type="checkbox" name="lrn_no"> No</label> &nbsp;&nbsp;
+        <label><input type="checkbox" name="returning_yes"> Returning (Balik-Aral)?</label>
+        <label><input type="checkbox" name="returning_no"> No</label>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td class="section-title" colspan="4">LEARNER INFORMATION</td></tr>
+    <tr>
+      <td colspan="2">PSA Birth Certificate No.: <input class="input-box" type="text" name="psa_no"></td>
+      <td colspan="2">Learner Reference No.: <input class="input-box" type="text" name="lrn"></td>
+    </tr>
+    <tr>
+      <td>Last Name: <input class="input-box" type="text" name="last_name"></td>
+      <td>First Name: <input class="input-box" type="text" name="first_name"></td>
+      <td>Middle Name: <input class="input-box" type="text" name="middle_name"></td>
+      <td>Extension Name (Jr., III, etc.): <input class="input-box" type="text" name="extension_name"></td>
+    </tr>
+    <tr>
+      <td>Birthdate (mm/dd/yyyy): <input class="input-box" type="text" name="birthdate"></td>
+      <td>
+        Sex: 
+        <label><input type="radio" name="sex" value="male"> Male</label>
+        <label><input type="radio" name="sex" value="female"> Female</label>
+      </td>
+      <td>Age: <input class="input-box" type="text" name="age"></td>
+      <td>Mother Tongue: <input class="input-box" type="text" name="mother_tongue"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        Belonging to Indigenous Peoples (IP)?
+        <label><input type="checkbox" name="ip_yes"> Yes</label>
+        <label><input type="checkbox" name="ip_no"> No</label><br>
+        If Yes, specify: <input class="input-box" type="text" name="ip_specify">
+      </td>
+      <td colspan="2">
+        Is your family a beneficiary of 4Ps?
+        <label><input type="checkbox" name="4ps_yes"> Yes</label>
+        <label><input type="checkbox" name="4ps_no"> No</label><br>
+        If Yes, 4Ps Household ID: <input class="input-box" type="text" name="4ps_id">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        Is the child a Learner with Disability? 
+        <label><input type="checkbox" name="disability_yes"> Yes</label>
+        <label><input type="checkbox" name="disability_no"> No</label>
+        <br><br>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Visual Impairment</label>
+          <label><input type="checkbox"> Hearing Impairment</label>
+          <label><input type="checkbox"> Learning Disability</label>
+          <label><input type="checkbox"> Intellectual Disability</label>
+          <label><input type="checkbox"> a. Blind</label>
+          <label><input type="checkbox"> b. Low Vision</label>
+          <label><input type="checkbox"> Autism Spectrum Disorder</label>
+          <label><input type="checkbox"> Emotional-Behavioral Disorder</label>
+          <label><input type="checkbox"> Orthopedic/Physical Handicap</label>
+          <label><input type="checkbox"> Speech/Language Disorder</label>
+          <label><input type="checkbox"> Cerebral Palsy</label>
+          <label><input type="checkbox"> Special Health Problem/Chronic Disease</label>
+          <label><input type="checkbox"> a. Cancer</label>
+          <label><input type="checkbox"> Multiple Disorder</label>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td class="section-title" colspan="6">CURRENT ADDRESS</td></tr>
+    <tr>
+      <td>House No.: <input class="input-box" type="text"></td>
+      <td>Sitio/Street: <input class="input-box" type="text"></td>
+      <td>Barangay: <input class="input-box" type="text"></td>
+      <td>Municipality/City: <input class="input-box" type="text"></td>
+      <td>Province: <input class="input-box" type="text"></td>
+      <td>Country: <input class="input-box" type="text"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Zip Code: <input class="input-box" type="text"></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td class="section-title" colspan="6">PERMANENT ADDRESS
+        <label><input type="checkbox"> Same with Current Address?</label>
+      </td>
+    </tr>
+    <tr>
+      <td>House No./Street: <input class="input-box" type="text"></td>
+      <td>Street Name: <input class="input-box" type="text"></td>
+      <td>Barangay: <input class="input-box" type="text"></td>
+      <td>Municipality/City: <input class="input-box" type="text"></td>
+      <td>Province: <input class="input-box" type="text"></td>
+      <td>Country: <input class="input-box" type="text"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Zip Code: <input class="input-box" type="text"></td>
+    </tr>
+  </table>
+  <table>
+    <tr><td class="section-title" colspan="4">PARENT'S/GUARDIAN'S INFORMATION</td></tr>
+    <tr>
+      <td colspan="2">Father's Name (Last, First, Middle): 
+        <input class="input-box" type="text" placeholder="Last">
+        <input class="input-box" type="text" placeholder="First">
+        <input class="input-box" type="text" placeholder="Middle">
+      </td>
+      <td colspan="2">Contact Number: <input class="input-box" type="text"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Mother's Maiden Name (Last, First, Middle): 
+        <input class="input-box" type="text" placeholder="Last">
+        <input class="input-box" type="text" placeholder="First">
+        <input class="input-box" type="text" placeholder="Middle">
+      </td>
+      <td colspan="2">Contact Number: <input class="input-box" type="text"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Legal Guardian's Name (Last, First, Middle): 
+        <input class="input-box" type="text" placeholder="Last">
+        <input class="input-box" type="text" placeholder="First">
+        <input class="input-box" type="text" placeholder="Middle">
+      </td>
+      <td colspan="2">Contact Number: <input class="input-box" type="text"></td>
+
+
+     <title>Student Enrollment Form</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    td, th {
+      padding: 6px;
+    }
+    .section-title {
+      background-color: #ddd;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+    .signature {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signature div {
+      width: 45%;
+      border-top: 1px solid black;
+      text-align: center;
+      padding-top: 5px;
+    }
+    .modalities {
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="section-title">
+      For Returning Learner (Balik-Aral) and Those Who will Transfer/Move In
+    </div>
+    <table>
+      <tr>
+        <td>Last Grade Level Completed: <input type="text" name="last_grade" style="width: 80%;"></td>
+        <td>Last School Year Completed: <input type="text" name="last_year" style="width: 80%;"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Last School Attended: <input type="text" name="last_school" style="width: 94%;"></td>
+      </tr>
+      <tr>
+        <td colspan="2">School ID: <input type="text" name="school_id" maxlength="6" style="width: 20%;"></td>
+      </tr>
+    </table>
+    <div class="section-title">
+      For Learners in Senior High School
+    </div>
+    <table>
+      <tr>
+        <td>Semester:
+          <label><input type="checkbox" name="semester" value="1st"> 1st</label>
+          <label><input type="checkbox" name="semester" value="2nd"> 2nd</label>
+        </td>
+        <td>Track: <input type="text" name="track" style="width: 80%;"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Strand: <input type="text" name="strand" style="width: 96%;"></td>
+      </tr>
+    </table>
+    <div class="modalities">
+      <p><strong>If school will implement other distance learning modalities aside from face-to-face instruction, what would you prefer for your child?</strong></p>
+      <p>Choose all that apply:</p>
+      <label><input type="checkbox" name="modality" value="modular_print"> Modular (Print)</label><br>
+      <label><input type="checkbox" name="modality" value="modular_digital"> Modular (Digital)</label><br>
+      <label><input type="checkbox" name="modality" value="online"> Online</label><br>
+      <label><input type="checkbox" name="modality" value="educ_tv"> Educational Television</label><br>
+      <label><input type="checkbox" name="modality" value="radio"> Radio-Based Instruction</label><br>
+      <label><input type="checkbox" name="modality" value="homeschooling"> Homeschooling</label><br>
+      <label><input type="checkbox" name="modality" value="blended"> Blended</label>
+    </div>
+    <p style="margin-top: 30px;">
+      I hereby certify that the above information given are true and correct to the best of my knowledge and I allow the<br>
+      Department of Education to use my child’s details to create and/or update his/her learner profile in the Learner Information System.<br>
+      The information herein shall be treated as confidential in compliance with the Data Privacy Act of 2012.
+    </p>
+    <div class="signature">
+      <div>Signature Over Printed Name of Parent/Guardian</div>
+      <div>Date</div>
+    </div>
+  </form>
+</body>
+</html>
